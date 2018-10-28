@@ -1,0 +1,3 @@
+from .gaussian_natural_gradient import GaussianNaturalGradientOptimizer
+from .cma_es import CMAES
+from .bernoulli_natural_gradient import BernoulliNaturalGradientOptimizer

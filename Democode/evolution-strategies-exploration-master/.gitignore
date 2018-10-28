@@ -1,0 +1,7 @@
+.DS_Store
+venv-evolution
+*.ipynb_checkpoints*
+__pycache__
+.cache
+MNIST_data
+run_summaries

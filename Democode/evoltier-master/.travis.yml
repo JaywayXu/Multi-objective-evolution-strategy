@@ -1,0 +1,21 @@
+language: python
+
+python:
+  - 2.7
+  - 3.6
+
+install:
+  - pip install -r requirements-nocuda.txt
+  - pip install coverage coveralls
+
+script:
+  - python evoltier/test/make_test.py
+
+after_success:
+  - coverage run evoltier/test/make_test.py
+  - coverage report
+  - coveralls
+
+#notifications:
+#  slack:
+#    secure: your_token_key
